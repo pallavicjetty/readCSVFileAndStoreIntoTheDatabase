@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "readCSVFileStoreInDatabase", "readCSVFileStoreInDatabase\readCSVFileStoreInDatabase.csproj", "{3D0F38B6-96E9-41BD-9A56-F489983E8D66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D0F38B6-96E9-41BD-9A56-F489983E8D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0F38B6-96E9-41BD-9A56-F489983E8D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0F38B6-96E9-41BD-9A56-F489983E8D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0F38B6-96E9-41BD-9A56-F489983E8D66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7564F5C-DA53-4B3B-A2EB-49438CE22110}
+	EndGlobalSection
+EndGlobal
