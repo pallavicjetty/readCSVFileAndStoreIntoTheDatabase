@@ -14,10 +14,5 @@ namespace readCSVFileStoreInDatabase
             optionsBuilder.UseSqlServer(connectionString);
         }
         public DbSet<modelClass> modelClasses { get; set; }
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<modelClass>().ToTable("EFCore", "dbo");
-
-        //}
     }
 }
