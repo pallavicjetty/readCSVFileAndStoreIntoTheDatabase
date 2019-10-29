@@ -13,14 +13,10 @@ namespace readCSVFileStoreInDatabase
         static void Main(string[] args)
         {
             var Data = File.ReadAllLines(@"..\..\excel\convertcsv.csv");
-            Data = Data.Skip(1).ToArray();
-            string[] PassengerId;
-            string[] Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked;
-            //using (var db = new DbContextClass())
-            //{
-            //    var dataList = new modelClass();
+            Data = Data.Skip(1).ToArray();//to skip first row of the csv file
+                
                 var dataList = from dataSet in Data
-                           let data = dataSet.Split(';')
+                           let data = dataSet.Split(';') //splitting based on the delimiter
                            select new
                            {
                                PassengerId = data[0],
@@ -36,12 +32,7 @@ namespace readCSVFileStoreInDatabase
                                Cabin = data[10],
                                Embarked = data[11]
                            };
-            //int i = dataList.Count();
-            //for(var d=1;d<i;d++)
-            ////foreach (var d in dataList)
-            //{
-            //    Console.WriteLine(PassengerId + "|" + d.Survived);
-            //}
+           
             using (var db = new DbContextClass())
             {
                 
